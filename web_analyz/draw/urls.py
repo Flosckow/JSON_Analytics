@@ -5,5 +5,5 @@ from .views import GetJson, render_html
 
 urlpatterns = [
     path('file/', GetJson.as_view()),
-    path('render/', render_html, name='render')
+    path('render/', render_html, name='render'),
 ]

@@ -34,8 +34,8 @@ export default {
   data () {
     return {
       file: '',
-      x_field: '',
-      y_field: ''
+      x_field: 'name',
+      y_field: 'country'
     }
   },
   methods: {
@@ -60,6 +60,7 @@ export default {
         console.log('SUCCESS!!')
       }).catch(function (re) {
         console.log('FAILURE!!')
+        // параметры не улетают из-за этого костыля
         window.location.href = 'http://127.0.0.1:8000/lk/render'
       })
     },
